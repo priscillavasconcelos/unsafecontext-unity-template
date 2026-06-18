@@ -1,0 +1,12 @@
+{
+    "name": "Game.Infrastructure",
+    "rootNamespace": "UnsafeContext.Game.Infrastructure",
+    "references": [
+        "Game.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "noEngineReferences": false
+}

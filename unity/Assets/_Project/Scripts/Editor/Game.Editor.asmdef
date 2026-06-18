@@ -1,0 +1,17 @@
+{
+    "name": "Game.Editor",
+    "rootNamespace": "UnsafeContext.Game.Editor",
+    "references": [
+        "Game.Core",
+        "Game.Infrastructure",
+        "Game.Gameplay",
+        "Game.UI"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "autoReferenced": true,
+    "noEngineReferences": false
+}

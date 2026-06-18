@@ -1,0 +1,155 @@
+##############################
+# UNITY PROJECT (in /unity) #
+##############################
+
+# Unity generated folders
+unity/[Ll]ibrary/
+unity/[Tt]emp/
+unity/[Oo]bj/
+unity/[Bb]uild/
+unity/[Bb]uilds/
+unity/[Ll]ogs/
+unity/[Uu]serSettings/
+unity/[Mm]emoryCaptures/
+
+# Unity caches
+unity/[Aa]ssets/AssetStoreTools*
+unity/[Gg]radle/
+unity/[Bb]uildReports/
+unity/[Pp]ackages/com.unity.*.tests/
+
+# Burst
+unity/**/*.burst
+
+# Crashlytics
+unity/crashlytics-build.properties
+unity/**/*.sym
+
+# IDE generated projects
+unity/*.csproj
+unity/*.unityproj
+unity/*.sln
+unity/*.suo
+unity/*.tmp
+unity/*.user
+unity/*.userprefs
+unity/*.pidb
+unity/*.booproj
+unity/*.svd
+unity/*.pdb
+unity/*.mdb
+unity/*.opendb
+unity/*.VC.db
+
+# Unity cache meta
+unity/.vs/
+unity/.vscode/
+
+# Occlusion data
+unity/Library/Occlusion/
+unity/Library/ScriptAssemblies/
+unity/Library/ShaderCache/
+unity/Library/metadata/
+
+# Build generated
+unity/**/*.apk
+unity/**/*.aab
+unity/**/*.ipa
+unity/**/*.keystore
+
+#################################
+# RIDER / INTELLIJ / JETBRAINS #
+#################################
+
+unity/.idea/
+unity/*.iml
+unity/*.iws
+unity/*.ipr
+
+# Rider workspace files
+.idea/
+*.iml
+
+##############################
+# MACOS / WINDOWS JUNK FILES #
+##############################
+
+.DS_Store
+Thumbs.db
+
+##############################
+# NODE / FIREBASE / BACKEND  #
+##############################
+
+node_modules/
+firebase/node_modules/
+functions/node_modules/
+
+# Logs
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Firebase
+.firebaserc
+.firebase/
+.firebase-tools.json
+
+# Env
+.env
+.env.*
+!.env.example
+
+# Build outputs
+dist/
+build/
+coverage/
+
+##############################
+# GIT LFS                    #
+##############################
+
+# Binary art and docs are TRACKED via Git LFS (see .gitattributes) — NOT ignored.
+# Ignoring them by extension would drop real game textures (.tga/.tiff) and
+# documentation PDFs. If you want SOURCE art kept out of the repo, scope it to a
+# folder instead of an extension, e.g.:
+# art-source/
+
+##############################
+# EDITOR / OS METADATA       #
+##############################
+
+*.swp
+*.lock
+*.tmp
+*.temp
+*.bak
+*.orig
+
+##############################
+# PYTHON (if used in tools)  #
+##############################
+
+__pycache__/
+*.pyc
+*.pyo
+
+##############################
+# ANY PRIVATE LOCAL TOOLING  #
+##############################
+
+local/
+secrets/
+cache/
+unity/.utmp
+
+##############################
+# CLAUDE CODE (machine-local)#
+##############################
+
+# MCP servers are configured per machine at user scope (~/.claude.json).
+# Ignore any local project .mcp.json so machine-specific configs / keys never get committed.
+# (Remove this line only if you intentionally commit an env-var-only project .mcp.json.)
+.mcp.json
+.claude/settings.local.json

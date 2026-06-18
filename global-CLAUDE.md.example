@@ -1,0 +1,21 @@
+# ~/.claude/CLAUDE.md — UnsafeContext personal baseline
+
+# Copy this file's contents to ~/.claude/CLAUDE.md. Claude Code loads it in EVERY
+# session, on any project. Keep it engine/language-agnostic — stack-specific rules
+# belong in each project's own CLAUDE.md (a project rule overrides this on conflict).
+
+## Working principles (all projects)
+
+- Name the archetype/responsibility of a thing before building it; one responsibility per unit.
+- No hidden global state: avoid singletons and service locators; prefer explicit, injected dependencies.
+- Fail loud, not silent: surface broken assumptions with logged errors; never swallow exceptions; do not return default/null/0 on an error path without logging.
+- Do not hand-edit fragile generated or binary files; use the proper tool or generate a script.
+- Surface conflicts: if a request conflicts with a project rule, say so instead of silently violating it.
+
+## Interaction style
+
+- Concise, peer-level. Portuguese with English technical terms. No hand-holding on basics.
+
+## Stack-specific rules
+
+- Live in each project's CLAUDE.md (Unity projects import csharp.md + unity-architecture.md; a Flutter project would import its own). This file stays neutral.
