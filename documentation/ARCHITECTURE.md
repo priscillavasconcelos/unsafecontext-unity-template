@@ -243,6 +243,12 @@ Silent failure is the most expensive kind to maintain: the game misbehaves with 
 - The gameplay-layer equivalent of a View is an **Actor** (§10).
 - Dispose all bindings on scope teardown.
 
+**Where PrisVas comes from.** PrisVas is an in-house UPM package, not on a public registry. Pull it from its git repo by adding this line to `unity/Packages/manifest.json` (pin the `#` tag to the version you want):
+
+```json
+"com.unsafecontext.prisvas": "https://github.com/priscillavasconcelos/prisvas.git?path=/Packages/com.unsafecontext.prisvas#1.0.0"
+```
+
 ---
 
 ## 10. Gameplay layer = Actor + Controller (MVP)
