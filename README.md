@@ -10,7 +10,12 @@ The git repository wraps the project: the Unity project lives in `unity/`, with 
 2. Clone it. Open the **`unity/`** folder in Unity Hub (Unity 6 / URP), not the repo root.
 3. Find-replace the placeholder assembly prefix `Game` with your project name in the `.asmdef` files under `unity/Assets/_Project/Scripts/` (and adjust each `rootNamespace`).
 4. Rename the title line in `CLAUDE.md`. Run `git lfs install` once if you haven't.
-5. Done — `.editorconfig`, `.gitignore`, `.gitattributes`, and `CLAUDE.md` are already active.
+5. Add the in-house **PrisVas** UI package to `unity/Packages/manifest.json` (it's not on a public registry — see [ARCHITECTURE.md §9](documentation/ARCHITECTURE.md)):
+
+   ```json
+   "com.unsafecontext.prisvas": "https://github.com/priscillavasconcelos/prisvas.git?path=/Packages/com.unsafecontext.prisvas#1.0.0"
+   ```
+6. Done — `.editorconfig`, `.gitignore`, `.gitattributes`, and `CLAUDE.md` are already active.
 
 ## Layout
 
